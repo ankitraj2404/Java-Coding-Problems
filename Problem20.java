@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Program20 {
+public class Problem20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
