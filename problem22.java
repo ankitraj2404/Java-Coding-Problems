@@ -1,4 +1,12 @@
-//Program to print the rectangle pattern
+/*Program to print the rectangle pattern
+
+1 2 3 4 5 
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5 
+1 2 3 4 5
+
+*/
 
 import java.util.*;
 
@@ -12,7 +20,7 @@ public class problem22 {
 
             for (int i = 1; i <= row; i++) {
                 for (int j = 1; j <= col; j++) {
-                    System.out.print(j);
+                    System.out.print(j + " ");
                 }
                 System.out.println();
             }
