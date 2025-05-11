@@ -33,5 +33,6 @@ public class Problem32 {
         } catch (InputMismatchException e) {
             System.out.println();
         }
+        sc.close();
     }
 }
