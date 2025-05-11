@@ -28,6 +28,7 @@ public class Problem31 {
                 }
                 System.out.println();
             }
+            sc.close();
         } catch (InputMismatchException e) {
             System.out.println("Enter valid number of rows in form of integer");
         }
