@@ -1,3 +1,5 @@
+
+//Program to merge two given arrays into single one
 import java.util.*;
 
 public class Problem14 {
