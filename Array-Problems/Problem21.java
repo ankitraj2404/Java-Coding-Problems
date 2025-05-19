@@ -5,7 +5,7 @@ import java.util.*;
 public class Problem21 {
 
     public static void second_large(int[] arr) {
-        int max1 = arr[0], max2 = arr[0];
+        int max1 = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max1) {
                 max2 = max1;
@@ -42,6 +42,7 @@ public class Problem21 {
             for (int x : arr) {
                 System.out.print(x + " ");
             }
+            System.out.println();
 
             second_large(arr);
         } catch (InputMismatchException e) {
