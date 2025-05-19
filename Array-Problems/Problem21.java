@@ -1,4 +1,4 @@
-//Program to find the second largest element in the intege array
+//Program to find the second largest element in the integer array
 
 import java.util.*;
 
