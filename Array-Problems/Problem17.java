@@ -9,7 +9,7 @@ public class Problem17 {
     }
 
     public static boolean isValidDate(int date, int month, int year) {
-        if (month < 1 || month < 12 || date < 1 || year < 1) {
+        if (month < 1 || month > 12 || date < 1 || year < 1) {
             return false;
         }
 
