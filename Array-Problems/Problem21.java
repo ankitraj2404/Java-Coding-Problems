@@ -10,11 +10,15 @@ public class Problem21 {
             if (arr[i] > max1) {
                 max2 = max1;
                 max1 = arr[i];
-            } else {
+            } else if (arr[i] > max2 && arr[i] != max1) {
                 max2 = arr[i];
             }
         }
-        System.out.println("The second largest element in the array: " + max2);
+        if (max2 == Integer.MIN_VALUE) {
+            System.out.println("No second largest element (all elements may be equal).");
+        } else {
+            System.out.println("The second largest element in the array: " + max2);
+        }
     }
 
     public static void main(String[] args) {
