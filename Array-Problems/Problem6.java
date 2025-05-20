@@ -1,4 +1,4 @@
-//Program to delete an elemnt from the specific index
+//Program to delete an element from the specific index
 
 import java.util.*;
 
