@@ -14,6 +14,10 @@ class Rectangle { // Rectangle Class
     public double perimeter() {
         return 2 * (length + breadth);
     }
+
+    public boolean isSquare() {
+        return length == breadth;
+    }
 }
 
 public class Problem41 {
@@ -31,6 +35,7 @@ public class Problem41 {
 
             System.out.println("Area: " + rec.area());
             System.out.println("Perimeter: " + rec.perimeter());
+            System.out.println("Is it a square: " + rec.isSquare());
 
         } catch (InputMismatchException e) {
             System.out.println("Enter valid input");
