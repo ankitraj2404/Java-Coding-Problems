@@ -1,3 +1,5 @@
+
+//Write a class for student having properties as name,roll,course,marks and methods as total,average,grade
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
