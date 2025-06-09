@@ -2,10 +2,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class Product {// Product Class
-    String name;
-    String ItemNO;
-    int price;
-    int qty;
+    private String name;
+    private String ItemNO;
+    private int price;
+    private int qty;
 
     public String getName() {
         return name;
@@ -47,10 +47,10 @@ class Product {// Product Class
 // Customer Class
 class Customer {
 
-    String cust_Name;
-    String cust_Id;
-    int mobNo;
-    String address;
+    private String cust_Name;
+    private String cust_Id;
+    private int mobNo;
+    private String address;
 
     public String getName() {
         return cust_Name;
@@ -107,8 +107,8 @@ public class Problem45 {
             sc.nextLine();
 
             Product myProduct = new Product(ItemNO, name);
-            myProduct.price = price;
-            myProduct.qty = qty;
+            myProduct.setPrice(price);
+            myProduct.setQuantity(qty);
 
             // Customer Details
             System.out.println("Enter the name and Customer ID: ");
@@ -120,8 +120,8 @@ public class Problem45 {
             int mobNo = sc.nextInt();
 
             Customer newCustomer = new Customer(cust_Name, cust_Id);
-            newCustomer.address = address;
-            newCustomer.mobNo = mobNo;
+            newCustomer.setAddress(address);
+            newCustomer.setMobileNo(mobNo);
 
             System.out.println(myProduct);
             System.out.println("------------------------------------");
