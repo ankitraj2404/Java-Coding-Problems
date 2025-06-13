@@ -72,6 +72,7 @@ public class Problem48 {
             System.out.println("Enter the Name and Breed for the second dog: ");
             String newName2 = sc.nextLine();
             String newBreed2 = sc.nextLine();
+            sc.close();
 
             // Calling setter methods for setting the updated values
             dog2.setName(newName2);
