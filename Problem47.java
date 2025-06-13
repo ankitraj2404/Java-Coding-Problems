@@ -1,7 +1,9 @@
+
+// Create a class Person and set their attribute using constructor
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-class Person {
+class Person { // Person Class
     private String name;
     private int age;
 
@@ -13,7 +15,7 @@ class Person {
         return age;
     }
 
-    public Person(String name, int age) {
+    public Person(String name, int age) { // Parameterized Constructor
         this.name = name;
         this.age = age;
     }
