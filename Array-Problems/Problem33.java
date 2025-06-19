@@ -36,12 +36,14 @@ public class Problem33 {
             for (int i = 0; i < size; i++) {
                 System.out.print("Enter element at " + (i + 1) + " : ");
                 array[i] = sc.nextInt();
-                System.out.println();
+                // System.out.println();
             }
             int difference = differenceMaxMin(array, size);
             System.out.println("The difference between max and min value is: " + difference);
         } catch (InputMismatchException e) {
             System.out.println("Enter valid input");
+        } finally {
+            sc.close();
         }
 
     }
