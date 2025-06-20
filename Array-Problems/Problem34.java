@@ -55,6 +55,8 @@ public class Problem34 {
             findAverage(array, size);
         } catch (InputMismatchException e) {
             System.out.println("Enter valid input");
+        } finally {
+            sc.close();
         }
     }
 }
