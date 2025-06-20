@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
 public class Problem31 {
 
     public static void display(int[] array) {
-        System.out.print("Array: ");
+        System.out.print("Original Array: ");
         for (int x : array) {
             System.out.print(x + " ");
         }
@@ -24,7 +24,7 @@ public class Problem31 {
             array[nonZeroIndex] = 0;
             nonZeroIndex++;
         }
-        System.out.print("Array: ");
+        System.out.print("Array after shifting all zeros to the end: ");
         for (int x : array) {
             System.out.print(x + " ");
         }
@@ -44,6 +44,7 @@ public class Problem31 {
                 System.out.print("Enter element at " + (i + 1) + " : ");
                 array[i] = sc.nextInt();
             }
+            System.out.println();
             display(array);
             shiftAllZero(array, size);
 
