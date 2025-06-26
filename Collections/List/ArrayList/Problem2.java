@@ -19,7 +19,6 @@ public class Problem2 {
             String stateName = sc.nextLine();
             myList.add(stateName);
         }
-
         // check for TamilNadu
         Iterator<String> myIterator = myList.iterator();
         boolean found = false;
