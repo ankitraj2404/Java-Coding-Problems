@@ -1,3 +1,5 @@
+
+//Write a java progrsm to update the arraylist element
 import java.util.ArrayList;
 import java.util.Scanner;
 
