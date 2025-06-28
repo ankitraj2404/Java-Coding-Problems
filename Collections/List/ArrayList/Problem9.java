@@ -1,9 +1,6 @@
 
 //Write a Java program to shuffle an ArrayList multiple times and check if the order changes with each shuffle.
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 
 public class Problem9 {
     public static void main(String[] args) {
