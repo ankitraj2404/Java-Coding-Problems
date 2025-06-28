@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Problem7 {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
 
             System.out.print("ENter the size of the array list: ");
