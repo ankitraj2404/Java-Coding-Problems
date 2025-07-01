@@ -26,6 +26,7 @@ public class Problem10 {
         Collections.reverse(myArrayList);
         // Display array
         System.out.println("Reversed ArrayList: " + myArrayList);
+        sc.close();
     }
 
 }
