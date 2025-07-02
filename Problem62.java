@@ -7,7 +7,7 @@ public class Problem62 {
 
     @FunctionalInterface
     public interface Leap {
-        String leapYearcheck(int year);
+        boolean leapYearcheck(int year);
     }
 
     public static void main(String... args) {
@@ -16,10 +16,7 @@ public class Problem62 {
             int year = sc.nextInt();
 
             Leap lp = (y) -> {
-                if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
-                    return y + " is a leap year";
-                else
-                    return y + " is not a leap year";
+                return ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0));
             };
 
             System.out.println(lp.leapYearcheck(year));
