@@ -63,7 +63,7 @@ public class Problem16 {
                 System.out.println("ArrayList are not equals");
             }
         } catch (Exception e) {
-            System.out.println("Enter valid input");
+            System.out.println("Enter valid input" + e);
         }
     }
 }
