@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class Problem20 {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
+
+            // Take size as input
             System.out.println("Enter the size of the first array: ");
             int size = sc.nextInt();
             sc.nextLine(); // Consume left over line
