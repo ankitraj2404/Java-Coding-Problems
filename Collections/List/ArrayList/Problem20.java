@@ -23,7 +23,7 @@ public class Problem20 {
             int size2 = sc.nextInt();
             sc.nextLine(); // consume left over line
 
-            // Declare arraylist 2
+            // Declare Second ArrayList
             ArrayList<String> secondArrayList = new ArrayList<>();
 
             System.out.println("Enter elements in second array list");
