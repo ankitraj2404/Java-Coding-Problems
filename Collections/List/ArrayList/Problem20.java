@@ -11,7 +11,7 @@ public class Problem20 {
             int size = sc.nextInt();
             sc.nextLine(); // Consume left over line
 
-            // Declare arraylist 1
+            // Declare First ArrayList
             ArrayList<String> firstArrayList = new ArrayList<>();
 
             System.out.println("Enter elements in first array list");
