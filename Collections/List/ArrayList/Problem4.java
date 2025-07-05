@@ -8,7 +8,6 @@ public class Problem4 {
     static class IndexNotFoundException extends Exception { // Custom exception
         public IndexNotFoundException(String message) {
             super(message);
-            System.out.println("Index size shouble be between 0 and (Size - 1)");
         }
     }
 
