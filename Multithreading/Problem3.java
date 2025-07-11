@@ -1,3 +1,5 @@
+
+//Write a Java program to create and start multiple threads that increment a shared counter variable concurrently.
 import java.util.Scanner;
 
 class myThread extends Thread {
