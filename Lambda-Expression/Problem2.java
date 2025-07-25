@@ -16,9 +16,11 @@ public class Problem2 {
             int firstNumber = sc.nextInt();
             int secondNumber = sc.nextInt();
 
+            // Constant input
             System.out.println("Enter a constant value: ");
             int constant = sc.nextInt();
 
+            // Lambda Expression
             myinterface obj = (a, b, c) -> (a + b) * c;
             int result = obj.add(firstNumber, secondNumber, constant);
 
