@@ -3,7 +3,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.Predicate;
 
 public class Problem5 {
     public static void main(String... args) {
@@ -20,9 +19,7 @@ public class Problem5 {
             words.add(word);
         }
 
-        Predicate<String> check = s -> s.isEmpty();
-
-        boolean allEmpty = words.stream().allMatch(check);
+        boolean allEmpty = words.stream().allMatch(s -> s.isEmpty());
 
         if (allEmpty) {
             System.out.println("List is empty");
