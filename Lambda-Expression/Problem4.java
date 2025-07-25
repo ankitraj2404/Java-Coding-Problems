@@ -3,25 +3,24 @@
 import java.util.function.Predicate;
 
 public class Problem4 {
+
+    // Method to check string is empty or not
+    public static void checkString(String s, Predicate<String> check) {
+        if (check.test(s)) {
+            System.out.println("String is empty");
+        } else {
+            System.out.println("String is not empty");
+        }
+    }
+
     public static void main(String[] args) {
 
-        String str = new String();
+        String str = "     ";
         String str1 = "Hello";
 
-        Predicate<String> check = value -> value.isEmpty();
+        Predicate<String> check = value -> value.trim().isEmpty();
 
-        Boolean result = check.test(str1);
-        Boolean result1 = check.test(str);
-
-        if (result) {
-            System.out.println("is empty");
-        } else {
-            System.out.println("Not Empty");
-        }
-        if (result1) {
-            System.out.println("is empty");
-        } else {
-            System.out.println("Not Empty");
-        }
+        checkString(str, check);
+        checkString(str1, check);
     }
 }
