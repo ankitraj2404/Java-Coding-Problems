@@ -7,9 +7,9 @@ public class Problem4 {
     // Method to check string is empty or not
     public static void checkString(String s, Predicate<String> check) {
         if (check.test(s)) {
-            System.out.println("String is empty");
+            System.out.println("\"" + s + "\" String is empty or contains white spaces");
         } else {
-            System.out.println("String is not empty");
+            System.out.println("\"" + s + "\" String is not empty");
         }
     }
 
