@@ -15,11 +15,13 @@ public class Problem7 {
             int choice = sc.nextInt();
             List<String> result = new ArrayList<>();
             if (choice == 1) {
-                System.out.println("List in uppercase: ");
+                System.out.print("List in uppercase: ");
                 fruits.forEach(fruit -> result.add(fruit.toUpperCase()));
+                System.out.println();
             } else if (choice == 2) {
-                System.out.println("List in lowercase: ");
+                System.out.print("List in lowercase: ");
                 fruits.forEach(fruit -> result.add(fruit.toLowerCase()));
+                System.out.println();
             } else {
                 System.out.println("Invalid choice");
             }
