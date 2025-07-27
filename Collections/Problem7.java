@@ -26,7 +26,7 @@ public class Problem7 {
             result.forEach(System.out::println);
 
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println("Invalid input");
         }
     }
 }
