@@ -21,8 +21,8 @@ public class Problem2 {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         try {
-            Scanner sc = new Scanner(System.in);
             System.out.println("Enter starting and ending point: ");
             int start = sc.nextInt();
             int end = sc.nextInt();
@@ -30,6 +30,8 @@ public class Problem2 {
             printNumbers(start, end);
         } catch (outOfRangeException e) {
             System.out.println(e.getMessage());
+        } finally {
+            sc.close();
         }
     }
 }
