@@ -1,4 +1,4 @@
-//Write a Java program to intentionally throw a custom exception from a method and catch it in the caller using a try-catch block.
+// Write a Java program to intentionally throw a custom exception from a method and catch it in the caller using a try-catch block.
 
 import java.util.Scanner;
 
