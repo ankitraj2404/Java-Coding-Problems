@@ -1,4 +1,4 @@
-//Write a Java program to throw different types of exceptions in a single try block and handle them separately using a multi-catch clause.
+// Write a Java program to throw different types of exceptions in a single try block and handle them separately using a multi-catch clause.
 
 public class Problem5 {
     public static void main(String[] args) {
