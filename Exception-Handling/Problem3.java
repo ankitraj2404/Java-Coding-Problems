@@ -10,6 +10,7 @@ public class Problem3 {
 
         } catch (NullPointerException | ArithmeticException e) {
             System.out.println("Caught exception: " + e.getClass().getSimpleName());
+
             System.out.println("Error: " + e.getMessage());
         }
     }
