@@ -17,6 +17,8 @@ public class Problem4 {
 
                 if (b >= 65 && b <= 90)
                     fos.write(b + 32);
+                else
+                    fos.write(b);
             }
 
             byte[] arr = new byte[fis1.available()];
