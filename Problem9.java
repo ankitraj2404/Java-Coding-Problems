@@ -1,37 +1,44 @@
-//Program to check the week-day with the given number
 
+//Write a java Program to print the weekday using enum data type.
 import java.util.*;
 
-public class Problem9 {
+enum weekDay {
+    MONDAY(1),
+    TUESDAY(2),
+    WEDNESDAY(3),
+    THRUSDAY(4),
+    FRIDAY(5),
+    SATURDAY(6),
+    SUNDAY(7);
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    private int dayNumber;
 
-        try {
-            System.out.println("Enter the day number: ");
-            int day = sc.nextInt();
-            if (day == 1) {
-                System.out.println("Its MONDAY");
-            } else if (day == 2) {
-                System.out.println("Its TUESDAY");
-            } else if (day == 3) {
-                System.out.println("Its WEDNESDAY");
-            } else if (day == 4) {
-                System.out.println("Its THURSDAY");
-            } else if (day == 5) {
-                System.out.println("Its FRIDAY");
-            } else if (day == 6) {
-                System.out.println("Its SATURDAY");
-            } else if (day == 7) {
-                System.out.println("Its SUNDAY");
-            } else {
-                System.out.println("Not a valid Number");
-            }
-
-        } catch (InputMismatchException e) {
-            System.out.println("Enter valid weekday number");
-        }
-        sc.close();
+    weekDay(int dayNumber) {
+        this.dayNumber = dayNumber;
     }
 
+    public static weekDay fromNumber(int number) {
+        for (weekDay day : weekDay.values()) {
+            if (day.dayNumber == number) {
+                return day;
+            }
+        }
+        return null;
+    }
+}
+
+public class Problem9 {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Enter day number from(1 to 7): ");
+            int input = sc.nextInt();
+
+            weekDay day = weekDay.fromNumber(input);
+            System.out.println(day);
+
+        } catch (InputMismatchException e) {
+            System.out.println(e);
+        }
+    }
 }
