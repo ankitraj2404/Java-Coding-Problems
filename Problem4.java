@@ -1,25 +1,32 @@
 //Program to check whether a given number is Odd or Even
 
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+interface oddEvenCheck {
+
+    public boolean check(int a);
+}
 
 public class Problem4 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        try {
-            System.out.print("Enter the number to check: ");
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Enter a number to check: ");
             int num = sc.nextInt();
 
-            if (num % 2 == 0) {
-                System.out.println(num + " is an even number");
+            oddEvenCheck isEven = (n) -> (n % 2 == 0) ? true : false;
+
+            if (isEven.check(num)) {
+                System.out.println(num + " is even");
             } else {
-                System.out.println(num + " is an odd number");
+                System.out.println(num + " is odd");
             }
 
         } catch (InputMismatchException e) {
-            System.out.println("Invalid input! Please enter a valid integer.");
+            System.out.println(e.getClass().getSimpleName());
         }
 
-        sc.close();
     }
 }
