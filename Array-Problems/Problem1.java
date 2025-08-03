@@ -1,40 +1,84 @@
-// Prpgram to find the sum of all of the elements in the array
-
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Problem1 {
+
+    public static void sortNumericArray(int[] arr, int size) {
+
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size - 1 - i; j++) {
+
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.print("Sorted Array: ");
+        for (int x : arr) {
+            System.out.print(x + " ");
+        }
+    }
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
 
-        try {
-            System.out.println("Enter the size of the array: ");
-            int size = sc.nextInt();
+            System.out.println("What do you want to sort?");
+            System.out.println("1. Numeric Array");
+            System.out.println("2. string Array");
+            int choice = sc.nextInt();
 
-            int arr[] = new int[size];
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter the size of the array: ");
+                    int size = sc.nextInt();
 
-            System.out.println("Enter the elements of the array: ");
-            for (int i = 0; i < size; i++) {
-                arr[i] = sc.nextInt();
+                    int[] numArray = new int[size];
+
+                    System.out.println("Enter elements");
+                    for (int i = 0; i < size; i++) {
+                        System.out.print("Enter elements at " + i + "th index: ");
+                        numArray[i] = sc.nextInt();
+                    }
+
+                    System.out.print("Original Array: ");
+                    for (int x : numArray) {
+                        System.out.print(x + " ");
+                    }
+                    System.out.println();
+                    sortNumericArray(numArray, size);
+
+                    break;
+
+                case 2:
+                    System.out.println("Enter the size of the array: ");
+                    int size1 = sc.nextInt();
+                    sc.nextLine();
+
+                    String[] strArray = new String[size1];
+
+                    System.out.println("Enter elements");
+                    for (int i = 0; i < size1; i++) {
+                        System.out.println("Enter elements at " + i + "th index: ");
+                        strArray[i] = sc.nextLine();
+                    }
+
+                    System.out.print("Original Array: ");
+                    for (String x : strArray) {
+                        System.out.print(x + " ");
+                    }
+                    System.out.println();
+                    break;
+
+                default:
+                    System.out.println("Invalid choice");
+
             }
 
-            System.out.print("Array: ");
-            for (int x : arr) {
-                System.out.print(x + " ");
-            }
-
-            int sum = 0;
-            System.out.println();
-
-            System.out.print("The sum of the elements of the array is: ");
-            for (int x : arr) {
-                sum += x;
-            }
-
-            System.out.print(sum);
-
-            sc.close();
         } catch (InputMismatchException e) {
-            System.out.println("Enter valid size for the array");
+            System.out.println(e);
         }
     }
 }
