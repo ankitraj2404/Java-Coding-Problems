@@ -80,7 +80,7 @@ public class Problem1 {
             }
 
         } catch (InputMismatchException e) {
-            System.out.println(e);
+            System.out.println("Enter valid input" + e);
         }
     }
 }
