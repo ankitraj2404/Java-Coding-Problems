@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Problem1 {
 
-    public static void sortNumericArray(int[] arr, int size) {
+    public static void sortNumericArray(int[] arr, int size) { // Method to sort array
 
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size - 1 - i; j++) {
