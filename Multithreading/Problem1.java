@@ -1,5 +1,5 @@
 
-//First Multithreading program
+//First Multithreading program.
 import java.util.Scanner;
 
 public class Problem1 extends Thread {
