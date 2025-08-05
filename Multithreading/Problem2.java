@@ -1,5 +1,5 @@
 
-//Practice Program....
+// Practice Program....
 import java.util.Scanner;
 
 class ATM {
