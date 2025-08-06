@@ -1,3 +1,5 @@
+
+//Write a Java program to create an ArrayList of colors and use a lambda expression to filter out colors containing a specific substring before printing.
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
