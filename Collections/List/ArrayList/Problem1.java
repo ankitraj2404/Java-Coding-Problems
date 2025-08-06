@@ -11,7 +11,7 @@ public class Problem1 {
 
         colors.forEach(System.out::println); // one way
 
-        Iterator<String> it = colors.iterator();// by using iterator
+        Iterator<String> it = colors.iterator();// by using iterator interface
 
         while (it.hasNext()) {
             System.out.println(it.next());
