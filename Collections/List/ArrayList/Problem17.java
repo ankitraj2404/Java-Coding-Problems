@@ -19,11 +19,10 @@ public class Problem17 {
             }
             System.out.println("Orgininal list: " + list);
 
-            System.out.println("Enter the index value you want to update between 0 and " + (size - 1) + ":");
-
+            System.out.print("Enter the index value you want to update between 0 and " + (size - 1) + ":");
             int index = sc.nextInt();
 
-            System.out.println("Enter the element you want to update with at index " + index + " :");
+            System.out.print("Enter the element you want to update with at index " + index + ": ");
             int element = sc.nextInt();
 
             if (index < 0 || index > size - 1) {
