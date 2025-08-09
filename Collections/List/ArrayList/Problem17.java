@@ -19,7 +19,8 @@ public class Problem17 {
             }
             System.out.println("Orgininal list: " + list);
 
-            System.out.println("Enter the index value you want to update: ");
+            System.out.println("Enter the index value you want to update between 0 and " + (size - 1) + ":");
+
             int index = sc.nextInt();
 
             System.out.println("Enter the element you want to update with at index " + index + " :");
