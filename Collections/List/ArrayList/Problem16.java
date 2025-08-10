@@ -18,18 +18,14 @@ public class Problem16 {
                 list.add(num);
             }
             System.out.println("Orgininal list: " + list);
-            System.out.println("Enter the index between 0 to " + size + " you want to access: ");
+            System.out.println("Enter the index between 0 to " + (size - 1) + " you want to access: ");
             int index = sc.nextInt();
 
-            if (index < 0 || index >= size) {
-                System.out.println("Please enter valid index");
-            } else {
-                int element = list.get(index);
-                System.out.println("The element at index " + index + " is: " + element);
-            }
+            int element = list.get(index); // java will throw exception
+            System.out.println("The element at index " + index + " is: " + element);
 
-        } catch (Exception e) {
-            System.out.println(e.getClass().getSimpleName());
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println(e.getClass().getSimpleName() + " " + e.getMessage());
         }
     }
 }
