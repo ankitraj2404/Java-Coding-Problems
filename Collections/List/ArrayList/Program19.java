@@ -1,4 +1,4 @@
-//Write a Java program to retrieve an element at a specified index using Java streams and Optional to handle missing values.
+// Write a Java program to retrieve an element at a specified index using Java streams and Optional to handle missing values.
 
 import java.util.ArrayList;
 import java.util.Optional;
