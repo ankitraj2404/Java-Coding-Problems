@@ -1,3 +1,5 @@
+
+//Write a Java program to replace all occurrences of a specific value in an ArrayList with another value using streams.
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
