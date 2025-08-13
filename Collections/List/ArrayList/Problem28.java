@@ -1,5 +1,5 @@
 
-//Write a Java program to search for an element in an array list.
+// Write a Java program to search for an element in an array list.
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.IntStream;
