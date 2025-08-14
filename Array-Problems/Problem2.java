@@ -19,17 +19,20 @@ public class Problem2 {
             for (int x : array) {
                 System.out.print(x + " ");
             }
+            System.out.println();
 
-            for (int i = 0; i < size; i++) {
+            for (int i = 0; i < size - 1; i++) {
                 int maxIndex = i;
                 for (int j = i + 1; j < size; j++) {
                     if (array[j] > array[maxIndex]) {
                         maxIndex = j;
                     }
                 }
-                int swap = array[i];
-                array[i] = array[maxIndex];
-                array[maxIndex] = swap;
+                if (maxIndex != i) {
+                    int swap = array[i];
+                    array[i] = array[maxIndex];
+                    array[maxIndex] = swap;
+                }
 
             }
             System.out.print("Array after sorting in descending order: ");
