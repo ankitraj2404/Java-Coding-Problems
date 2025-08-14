@@ -24,6 +24,22 @@ public class Problem1 {
         }
     }
 
+    public static void sortStringArray(String[] str, int size) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size - i - 1; j++) {
+                if (str[j].compareTo(str[j + 1]) > 0) {
+                    String temp = str[j];
+                    str[j] = str[j + 1];
+                    str[j + 1] = temp;
+                }
+            }
+        }
+        System.out.print("Sorted Array: ");
+        for (String s : str) {
+            System.out.print(s + " ");
+        }
+    }
+
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
 
@@ -41,7 +57,6 @@ public class Problem1 {
 
                     System.out.println("Enter elements");
                     for (int i = 0; i < size; i++) {
-                        System.out.print("Enter elements at " + i + "th index: ");
                         numArray[i] = sc.nextInt();
                     }
 
@@ -72,6 +87,7 @@ public class Problem1 {
                         System.out.print(x + " ");
                     }
                     System.out.println();
+                    sortStringArray(strArray, size1);
                     break;
 
                 default:
