@@ -17,7 +17,7 @@ public class Problem15 {
                 array[i] = sc.nextInt();
             }
             System.out.println("Original array: " + Arrays.toString(array));
-            System.out.println("Enter the moving vale: ");
+            System.out.println("Enter the moving value: ");
             int value = sc.nextInt();
 
             ArrayList<Double> list = new ArrayList<>();
