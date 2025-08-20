@@ -1,4 +1,4 @@
-//Write a Java program to remove all elements from a HashSet by iterating through it and then print the final size.
+// Write a Java program to remove all elements from a HashSet by iterating through it and then print the final size.
 
 import java.util.HashSet;
 import java.util.Iterator;
