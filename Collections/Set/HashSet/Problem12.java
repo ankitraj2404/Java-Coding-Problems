@@ -1,4 +1,4 @@
-//Write a Java program to count the elements in a HashSet using Java streams and compare the result with the size() method.
+// Write a Java program to count the elements in a HashSet using Java streams and compare the result with the size() method.
 
 import java.util.HashSet;
 import java.util.Scanner;
