@@ -1,4 +1,4 @@
-//Write a Java program to determine the size of a HashSet after performing bulk insertion and deletion operations.
+// Write a Java program to determine the size of a HashSet after performing bulk insertion and deletion operations.
 
 import java.util.HashSet;
 import java.util.Scanner;
