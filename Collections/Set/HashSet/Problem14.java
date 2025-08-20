@@ -1,4 +1,4 @@
-//Write a Java program to empty an hash set.
+// Write a Java program to empty an hash set.
 
 import java.util.HashSet;
 import java.util.Scanner;
