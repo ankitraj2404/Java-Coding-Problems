@@ -42,6 +42,20 @@ class Restaurant {
         }
     }
 
+    // Method to calculate rating
+    public double averageRating() {
+        if (ratings.isEmpty()) {
+            return 0.0;
+        }
+        int total = 0;
+        for (int rating : ratings.values()) {
+            total += rating;
+        }
+
+        return (double) total / ratings.size();
+
+    }
+
     public void displayMenu() {
         for (String item : menu.keySet()) {
             System.out.println(item + " - &" + menu.get(item) + " Ratings: " + ratings.get(item));
@@ -74,6 +88,9 @@ public class Problem63 {
                 myRestaurant.addItem(itemName, itemPrice, rating);
                 count--;
             }
+
+            double average = myRestaurant.averageRating();
+            System.out.print("Average rating: " + average);
 
             System.out.print("Do you want to remove item?(yes or no)");
             String ans = sc.nextLine();
