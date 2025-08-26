@@ -16,7 +16,7 @@ public class Problem30 {
             }
             Arrays.sort(array);
             System.out.println("Original Array: " + Arrays.toString(array));
-            System.out.println("Enter element to insert element: ");
+            System.out.println("Enter element to insert: ");
             int element = sc.nextInt();
             int index = size;
             for (int i = 0; i < size; i++) {
