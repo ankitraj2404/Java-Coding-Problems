@@ -20,8 +20,7 @@ public class Problem28 {
             System.out.println("Original Array: " + Arrays.toString(array));
 
             int[] evenElements = IntStream.range(0, size).filter(i -> i % 2 == 0).map(i -> array[i]).toArray();
-            String result = evenElements.length == 0 ? "No even Numbers found" : "Array with even numbers: ";
-            System.out.println(result + Arrays.toString(evenElements));
+            System.out.println(Arrays.toString(evenElements));
         } catch (Exception e) {
             System.out.println(e.getClass().getSimpleName());
         }
