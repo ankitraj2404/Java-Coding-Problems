@@ -1,5 +1,5 @@
 
-//Write a Java program to reverse only the even numbers in an array.
+// Write a Java program to reverse only the even numbers in an array.
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.IntStream;
