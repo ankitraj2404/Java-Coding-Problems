@@ -1,4 +1,4 @@
-//Write a Java program to find the difference between the maximum and minimum values in an array.
+// Write a Java program to find the difference between the maximum and minimum values in an array.
 
 import java.util.Arrays;
 import java.util.OptionalInt;
