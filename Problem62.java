@@ -1,4 +1,4 @@
-//  Write a java Program to check leap year by using lambda expression
+//Write a java Program to check leap year by using lambda expression
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
