@@ -1,4 +1,4 @@
-// Write a Java program to reverse a section of an array between two given indices.
+//Write a Java program to reverse a section of an array between two given indices.
 
 import java.util.Arrays;
 import java.util.Scanner;
